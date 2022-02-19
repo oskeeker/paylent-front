@@ -1,0 +1,25 @@
+<p>Payment Creation</p>
+
+<div class="user-creation">
+  <label for="user">User who paid</label>
+  <select [(ngModel)]="payment.user" id="user">
+    <option *ngFor="let user of users |async" [ngValue]="user">{{user.firstName}} {{user.lastName}}</option>
+  </select></div>
+<div class="form-group">
+  <label for="value">Amount of  money</label>
+  <input type="number" class="form-control" id="value"
+         required
+         [(ngModel)]="payment.value" name="value" step='0.01' value='0.00' placeholder='0.00'>
+</div>
+<div class="form-group">
+  <label for="description">Description</label>
+  <input type="text" class="form-control" id="description"
+         required
+         [(ngModel)]="payment.description" name="description">
+</div>
+
+<select multiple [(ngModel)]="payment.usersToPay" id="multiple">
+  <option *ngFor="let user of users | async" [ngValue]="user">{{user.firstName}}</option>
+</select>
+
+<button type="button" (click)="onClickPayment()">Create Payment</button>

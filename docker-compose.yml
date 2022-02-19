@@ -1,0 +1,13 @@
+version: '3'
+services:
+    server:
+        image: front
+        ports:
+            - "4200:4200"
+        tty: true
+        expose:
+            - "4200" 
+        stdin_open: true
+        environment:
+            - MODE=dev
+        command: npm start
