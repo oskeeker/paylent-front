@@ -10,8 +10,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Docker configuration
 
-To generate a Docker image run `docker build -t front .`
-For container creation run `docker-compose up -d`
+- To generate a Docker image run `docker build -t front .`
+- For container creation run `docker-compose up -d`
 
 ## Build
 
