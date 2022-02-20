@@ -1,4 +1,7 @@
 # Paylent
+Paylent is a web app to track payments between friends.
+
+This repo contains the front end side.
 
 ## Install dependencies
 
