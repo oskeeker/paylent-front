@@ -1,0 +1,19 @@
+.user-card {
+  flex-wrap: wrap;
+
+}
+
+.user-hr {
+  height:2px;
+  width:100%;
+  background: dimgrey;
+}
+
+.user-card-balance {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+

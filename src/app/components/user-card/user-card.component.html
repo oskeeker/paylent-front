@@ -1,8 +1,9 @@
-<div>
+<div class="user-card">
   <h2>Usuarios</h2>
-  <div>
-    <a *ngFor="let user of userCards">
-      <div>{{user.firstName}} {{user.lastName}} {{user.balance}} €</div>
-    </a>
-  </div>
+  <a *ngFor="let user of userCards">
+    <div class="user-card-balance">
+      <div>{{user.firstName}} {{user.lastName}}</div>
+      <div>{{user.balance}} €</div>
+    </div>
+  </a>
 </div>

@@ -1,0 +1,21 @@
+.name-value {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.hr {
+  height:2px;
+  width:100%;
+  background: dimgrey;
+}
+

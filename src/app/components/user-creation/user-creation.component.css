@@ -1,4 +1,16 @@
 .user-creation {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

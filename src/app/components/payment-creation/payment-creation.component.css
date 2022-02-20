@@ -1,0 +1,17 @@
+.payment-creation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.payment-labels {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.payment-inputs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

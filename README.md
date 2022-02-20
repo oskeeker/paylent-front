@@ -34,3 +34,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 - Validators.
 - Missing tests.
 - Styles.
+- Do not allow select the same user in both user selector (who paid and who has to pay).

@@ -1,9 +1,15 @@
-<div>
+<div class="payment-card">
   <h2>Pagos</h2>
   <div>
     <a *ngFor="let payment of payments">
-      <div>{{payment.user.firstName}} {{payment.user.lastName}} {{payment.value}} €</div>
-      <div>{{payment.description}} {{payment.date}}</div>
+      <div class="name-value">
+        <div>{{payment.user.firstName}} {{payment.user.lastName}}</div>
+        <div>{{payment.value}} €</div>
+      </div>
+      <div class="description">
+        <div>{{payment.description}}</div>
+        <div>{{payment.date}}</div></div>
+      <hr class="hr">
     </a>
   </div>
 </div>

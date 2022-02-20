@@ -1,30 +1,47 @@
-<p>Añada un pago</p>
+<h4>Añada un pago</h4>
 
-<div class="user-creation">
-  <label for="user">¿Quién ha pagado?: </label>
-  <select [(ngModel)]="payment.user" id="user">
-    <option *ngFor="let user of users |async" [ngValue]="user">{{user.firstName}} {{user.lastName}}</option>
-  </select></div>
-<div class="form-group">
-  <label for="value">Cantidad: </label>
-  <input type="number" class="form-control" id="value"
-         required
-         [(ngModel)]="payment.value" name="value" step='0.01' value='0.00' placeholder='0.00'>
+<div class="payment-creation">
+  <div>
+    <div class="payment-labels">
+      <label for="user">¿Quién ha pagado? </label>
+      <label for="value">Descripción </label>
+      <label for="description">Cantidad </label>
+      <label for="description">Usuarios a pagar </label>
+    </div>
+  </div>
+  <div class="payment-inputs">
+    <select [(ngModel)]="payment.user" id="user">
+      <option *ngFor="let user of users |async" [ngValue]="user">{{user.firstName}} {{user.lastName}}</option>
+    </select>
+    <input type="text" class="form-control" id="description"
+           required
+           [(ngModel)]="payment.description" name="description">
+    <input type="number" class="form-control" id="value"
+           required
+           [(ngModel)]="payment.value" name="value" step='0.01' value='0.00' placeholder='0.00'>
+    <select multiple [(ngModel)]="payment.usersToPay" id="multiple">
+      <option *ngFor="let user of users | async" [ngValue]="user">{{user.firstName}}</option>
+    </select>
+  </div>
+</div>
+
+<div class="payment-creation">
+
 </div>
 <div class="form-group">
-  <label for="description">Descripción: </label>
-  <input type="text" class="form-control" id="description"
-         required
-         [(ngModel)]="payment.description" name="description">
+
+
+</div>
+<div class="form-group">
+
+
 </div>
 
 <div>
   <div>
-    <label for="description">Usuarios a pagar: </label>
+
   </div>
-  <select multiple [(ngModel)]="payment.usersToPay" id="multiple">
-    <option *ngFor="let user of users | async" [ngValue]="user">{{user.firstName}}</option>
-  </select>
-  <button type="button" (click)="onClickPayment()">Create Payment</button>
+
+  <button type="button" (click)="onClickPayment()">Introducir pago</button>
 </div>
 

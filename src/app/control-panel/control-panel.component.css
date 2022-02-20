@@ -1,4 +1,10 @@
 .control-panel {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.label-control {
+  display: flex;
   justify-content: center;
 }
