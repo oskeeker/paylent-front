@@ -1,8 +1,8 @@
 <div>
-  <h2>Payments</h2>
+  <h2>Pagos</h2>
   <div>
     <a *ngFor="let payment of payments">
-      <div>{{payment.user.firstName}} {{payment.user.lastName}} {{payment.value}}</div>
+      <div>{{payment.user.firstName}} {{payment.user.lastName}} {{payment.value}} €</div>
       <div>{{payment.description}} {{payment.date}}</div>
     </a>
   </div>
