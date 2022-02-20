@@ -29,8 +29,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Pending changes
 
-- Missing Error Handling and transaction rollback.
-- Missing DB relations.
-- Micronaut Lombok.
-- Missing authentication.
-- Missing complex validators.
+- Missing error handling.
+- Better approach for component hierarchy.
+- Validators.
+- Missing tests.
+- Styles.
