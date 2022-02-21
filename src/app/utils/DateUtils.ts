@@ -12,16 +12,14 @@ export class DateUtils {
     days = Math.floor(days % 31);
     hours = Math.floor(hours % 24);
     mins = Math.floor(mins % 60);
-    // secs = Math.floor(secs % 60);
     let message = "";
     if (days <= 0) {
       if (hours == 0) {
-        message += "Hace " + mins + (mins > 1 ? " minutos." : " minuto.");
+        message += "Hace " + mins + (mins > 1 || mins == 0 ? " minutos." : " minuto.");
       } else {
         message += "Hace " + hours + (hours > 1 ? " horas." : " hora.");
       }
     } else {
-      // message += days + " days ";
       if (months > 0 || years > 0) {
         message += "Hace " + months + (hours > 1 ? " meses." : " mes.");
       }
